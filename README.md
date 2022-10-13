@@ -12,6 +12,7 @@ A simple page for generating a mail signature that employees can use with Google
  - [ ] Deploy to a .services site
  - [ ] Select address depending on selected office
  - [ ] Display the non-selected office in the "psst" text
+ - [ ] Google integration for auto-filling the details
 
 ## Contributing
 
