@@ -8,10 +8,10 @@ A simple page for generating a mail signature that employees can use with Google
 
 ## TODO
 
- - [ ] Style the signature
- - [ ] Deploy to a .services site
- - [ ] Select address depending on selected office
- - [ ] Display the non-selected office in the "psst" text
+ - [x] Style the signature
+ - [x] Deploy to a .services site
+ - [x] Select address depending on selected office
+ - [x] Display the non-selected office in the "psst" text
  - [ ] Google integration for auto-filling the details
 
 ## Contributing
