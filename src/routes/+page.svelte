@@ -8,11 +8,11 @@
 	let title = 'Kattvakt';
 
 	let otherOffice = 'Stockholm';
-	let officeAddress = 'Haga Kyrkogata 28, 411 23 Göteborg';
+	let officeAddress = 'Järntorgsgatan 12-14, 413 01 Göteborg';
 
 	const selectOffice = () => {
 		if (office === 'Göteborg') {
-			officeAddress = 'Haga Kyrkogata 28, 411 23 Göteborg';
+			officeAddress = 'Järntorgsgatan 12-14, 413 01 Göteborg';
 			otherOffice = 'Stockholm';
 		} else {
 			otherOffice = 'Göteborg';
