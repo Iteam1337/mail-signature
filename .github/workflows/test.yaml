@@ -21,6 +21,7 @@ jobs:
           node-version: 18.x
       - run: |
           npm ci
+          npx playwright install
           npm run check
           npm run lint
           npm run test

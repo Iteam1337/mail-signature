@@ -27,9 +27,9 @@
 	Email: <input type="text" bind:value={email} />@iteam.se<br />
 	Name: <input type="text" bind:value={name} /><br />
 	Office:
-	<select bind:value={office} on:change={selectOffice}>
-		<option selected>Göteborg</option>
-		<option>Stockholm</option>
+	<select bind:value={office} on:change={selectOffice} aria-label="office">
+		<option value="Göteborg" aria-selected="true">Göteborg</option>
+		<option value="Stockholm" aria-selected="false">Stockholm</option>
 	</select><br />
 	Phone: <input type="text" bind:value={phone} /><br />
 	Title: <input type="text" bind:value={title} /><br />
@@ -127,6 +127,7 @@
 											<span
 												data-acs="title"
 												style=" text-transform: initial; color: #000000; letter-spacing: 0px; line-height: 0.8; font-size: 11px;"
+												id="other-office-memo"
 											>
 												Psst, du vet väl att vi finns i {otherOffice} också?
 											</span>
