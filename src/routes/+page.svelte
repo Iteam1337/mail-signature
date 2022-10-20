@@ -27,9 +27,9 @@
 	Email: <input type="text" bind:value={email} />@iteam.se<br />
 	Name: <input type="text" bind:value={name} /><br />
 	Office:
-	<select bind:value={office} on:change={selectOffice}>
-		<option selected>Göteborg</option>
-		<option>Stockholm</option>
+	<select bind:value={office} on:change={selectOffice} aria-label="office">
+		<option value="Göteborg" aria-selected="true">Göteborg</option>
+		<option value="Stockholm" aria-selected="false">Stockholm</option>
 	</select><br />
 	Phone: <input type="text" bind:value={phone} /><br />
 	Title: <input type="text" bind:value={title} /><br />
@@ -59,7 +59,7 @@
 								alt="Iteam"
 							/>
 						</td>
-						<td valign="top" style="padding: 0.01px 0.01px 0.01px 5px; vertical-align:top;">
+						<td style="padding: 0.01px 0.01px 0.01px 5px; vertical-align:top;">
 							<table cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
 								<tbody
 									><tr>
@@ -127,6 +127,7 @@
 											<span
 												data-acs="title"
 												style=" text-transform: initial; color: #000000; letter-spacing: 0px; line-height: 0.9; font-size: 11px;"
+												id="other-office-memo"
 											>
 												Psst, du vet väl att vi finns i {otherOffice} också?
 											</span>
@@ -138,7 +139,7 @@
 					</tr>
 				</tbody>
 			</table>
-			<table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width:100%;">
+			<table cellpadding="0" cellspacing="0" style="max-width: 600px; width:100%;">
 				<tbody><tr><td style="line-height:00.8" /></tr></tbody>
 			</table>
 		</td></tr

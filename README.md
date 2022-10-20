@@ -8,13 +8,13 @@ A simple page for generating a mail signature that employees can use with Google
 
 ## TODO
 
- - [x] Style the signature
- - [x] Deploy to a .services site
- - [x] Select address depending on selected office
- - [x] Display the non-selected office in the "psst" text
- - [ ] Make the signature easier to copy
- - [ ] Figure out how to get rid of the extra line above the signature when pasting
- - [ ] Google integration for auto-filling the details
+- [x] Style the signature
+- [x] Deploy to a .services site
+- [x] Select address depending on selected office
+- [x] Display the non-selected office in the "psst" text
+- [ ] Make the signature easier to copy
+- [ ] Figure out how to get rid of the extra line above the signature when pasting
+- [ ] Google integration for auto-filling the details
 
 ## Contributing
 
