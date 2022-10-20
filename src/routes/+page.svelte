@@ -64,17 +64,17 @@
 								<tbody
 									><tr>
 										<td
-											style="line-height: 0.8; padding: 0.01px; font-family: Helvetica, Arial, sans-serif;"
+											style="line-height: 0.9; padding: 0.01px; font-family: Helvetica, Arial, sans-serif;"
 										>
 											<span
 												data-acs="name"
-												style=" text-transform: initial; font-weight: bold; color: #000000; letter-spacing: 0px; line-height: 0.8; font-size: 11px;"
+												style=" text-transform: initial; font-weight: bold; color: #000000; letter-spacing: 0px; line-height: 0.9; font-size: 11px;"
 											>
 												{name}
 											</span>
 											<span
 												data-acs="name"
-												style=" text-transform: initial; color: #000000; letter-spacing: 0px; line-height: 0.8; font-size: 11px;"
+												style=" text-transform: initial; color: #000000; letter-spacing: 0px; line-height: 0.9; font-size: 11px;"
 											>
 												/ {title}
 											</span>
@@ -82,7 +82,7 @@
 											<br />
 											<span
 												data-acs="title"
-												style=" text-transform: initial; color: #ff3b5c; line-height: 0.8; font-size: 11px;"
+												style=" text-transform: initial; color: #ff3b5c; line-height: 0.9; font-size: 11px;"
 											>
 												<a
 													href="mailto:{email.toLowerCase()}@iteam.se"
@@ -92,7 +92,7 @@
 											</span>
 											<span
 												data-acs="name"
-												style=" text-transform: initial; color: #000000; letter-spacing: 0px; line-height: 0.8; font-size: 11px;"
+												style=" text-transform: initial; color: #000000; letter-spacing: 0px; line-height: 0.9; font-size: 11px;"
 											>
 												/ {phone}
 											</span>
@@ -100,21 +100,21 @@
 
 											<span
 												data-acs="title"
-												style=" text-transform: initial; font-weight: bold; color: #000000; letter-spacing: 0px; line-height: 0.8; font-size: 11px;"
+												style=" text-transform: initial; font-weight: bold; color: #000000; letter-spacing: 0px; line-height: 0.9; font-size: 11px;"
 											>
 												Iteam
 											</span>
 											<br />
 											<span
 												data-acs="title"
-												style=" text-transform: initial; color: #000000; letter-spacing: 0px; line-height: 0.8; font-size: 11px;"
+												style=" text-transform: initial; color: #000000; letter-spacing: 0px; line-height: 0.9; font-size: 11px;"
 											>
 												{officeAddress}
 											</span>
 											<br />
 											<span
 												data-acs="title"
-												style=" text-transform: initial; color: #ff3b5c; letter-spacing: 0px; line-height: 0.8; font-size: 11px;"
+												style=" text-transform: initial; color: #ff3b5c; letter-spacing: 0px; line-height: 0.9; font-size: 11px;"
 											>
 												<a
 													href="https://www.iteam.se"
@@ -126,7 +126,7 @@
 											<br />
 											<span
 												data-acs="title"
-												style=" text-transform: initial; color: #000000; letter-spacing: 0px; line-height: 0.8; font-size: 11px;"
+												style=" text-transform: initial; color: #000000; letter-spacing: 0px; line-height: 0.9; font-size: 11px;"
 												id="other-office-memo"
 											>
 												Psst, du vet väl att vi finns i {otherOffice} också?
