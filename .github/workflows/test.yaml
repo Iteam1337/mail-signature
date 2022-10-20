@@ -15,7 +15,7 @@ jobs:
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
 
-      - name: 🔧 Install and Build
+      - name: 🔧 Test
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
