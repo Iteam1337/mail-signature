@@ -59,7 +59,7 @@
 								alt="Iteam"
 							/>
 						</td>
-						<td valign="top" style="padding: 0.01px 0.01px 0.01px 5px; vertical-align:top;">
+						<td style="padding: 0.01px 0.01px 0.01px 5px; vertical-align:top;">
 							<table cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
 								<tbody
 									><tr>
@@ -138,7 +138,7 @@
 					</tr>
 				</tbody>
 			</table>
-			<table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width:100%;">
+			<table cellpadding="0" cellspacing="0" style="max-width: 600px; width:100%;">
 				<tbody><tr><td style="line-height:00.8" /></tr></tbody>
 			</table>
 		</td></tr
