@@ -14,8 +14,12 @@ test('office', async ({ page }) => {
 	await page.goto('/');
 
 	await page.selectOption('[aria-label="office"]', 'Göteborg');
-	expect(await page.textContent('#other-office-memo')).toContain('Psst, du vet väl att vi finns i Stockholm också?');
+	expect(await page.textContent('#other-office-memo')).toContain(
+		'Psst, du vet väl att vi finns i Stockholm också?'
+	);
 
 	await page.selectOption('[aria-label="office"]', 'Stockholm');
-	expect(await page.textContent('#other-office-memo')).toContain('Psst, du vet väl att vi finns i Göteborg också?');
+	expect(await page.textContent('#other-office-memo')).toContain(
+		'Psst, du vet väl att vi finns i Göteborg också?'
+	);
 });
