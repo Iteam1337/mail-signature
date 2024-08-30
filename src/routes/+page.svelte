@@ -10,29 +10,29 @@
     <h2>1. Enter your details</h2>
 
     <!-- Namn -->
-    <label>Name:</label>
-    <input type="text" bind:value={name} placeholder="Förnamn Efternamn" />
+    <label for="name">Name:</label>
+    <input id="name" type="text" bind:value={name} placeholder="Förnamn Efternamn" />
     <br />
 
     <!-- Titel -->
-    <label>Title:</label>
-    <input type="text" bind:value={title} placeholder="Yrkestitel" />
+    <label for="title"> Title:</label>
+    <input id="title" type="text" bind:value={title} placeholder="Yrkestitel" />
     <br />
 
     <!-- E-postadress -->
-    <label>Email:</label>
-    <input type="text" bind:value={email} placeholder="fornamn.efternamn@iteam.se" />
+    <label for="email">Email:</label>
+    <input id="email" type="text" bind:value={email} placeholder="fornamn.efternamn@iteam.se" />
     <br />
 
     <!-- Telefon -->
-    <label>Phone:</label>
-    <input type="text" bind:value={phone} placeholder="+46 NNN NN NN NN" />
+    <label for="phone">Phone:</label>
+    <input id="phone" type="text" bind:value={phone} placeholder="+46 NNN NN NN NN" />
     <br />
 
     <h2>2. Copy your signature to your mail client</h2>
 
     <div>
-        <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif;">
+        <table cellpadding="0" cellspacing="0" style="border:0; font-family: Arial, sans-serif;">
             <tr>
                 <td style="padding-right: 15px;">
                     <img src="https://iteam.se/apple-touch-icon.png" alt="Iteam Logo" height="105" style="display: block;">
