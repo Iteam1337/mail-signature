@@ -1,4 +1,5 @@
 <script>
+    export const prerender = true;
 	let name = '';
 	let title = '';
 	let email = '';
