@@ -6,7 +6,6 @@ const config: UserConfig = {
 	server: {
 		proxy: {
 			'/api': {
-				target: 'http://localhost:3000', // Assuming your backend server is running on port 3000
 				changeOrigin: true,
 				rewrite: (path) => path.replace(/^\/api/, ''),
 				headers: {
