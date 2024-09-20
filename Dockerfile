@@ -1,20 +1,11 @@
-FROM node:16 AS builder
+FROM node:22
 
-WORKDIR /build
+WORKDIR /app
 
 ADD package.json .
 ADD package-lock.json .
 
 RUN npm ci
+ADD . .
 
-ADD src ./src
-ADD static ./static
-ADD svelte.config.js .
-ADD vite.config.ts .
-
-RUN npm run build
-
-FROM nginx AS runner
-
-WORKDIR /usr/share/nginx/html
-COPY --from=builder /build/build .
+CMD npm start

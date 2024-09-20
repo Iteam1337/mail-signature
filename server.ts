@@ -18,10 +18,10 @@ app.use(express.static(path.join(__dirname, 'static')))
 
 // Render the main page
 app.get('/', (req, res) => {
-  res.render('index', { 
+  res.render('index', {
     email: req.headers['x-forwarded-email'] || '',
     name: req.headers['x-forwarded-name'] || '',
-    role: req.headers['x-forwarded-role'] || ''
+    role: req.headers['x-forwarded-role'] || '',
   })
 })
 

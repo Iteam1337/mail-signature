@@ -1,0 +1,59 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mail-signature
+  labels:
+    app: mail-signature
+spec:
+  ports:
+    - port: 3000
+      protocol: TCP
+  clusterIP: None
+  selector:
+    app: mail-signature
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mail-signature
+  labels:
+    app: mail-signature
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mail-signature
+  template:
+    metadata:
+      labels:
+        app: mail-signature
+    spec:
+      containers:
+        - name: mail-signature
+          image: mail-signature
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mail-signature
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  labels:
+    name: mail-signature
+spec:
+  rules:
+    - host: signature.iteam.services
+      tls:
+        - hosts:
+            - signature.iteam.services
+          secretName: iteam-services-tls
+      http:
+        paths:
+          - pathType: Prefix
+            path: '/'
+            backend:
+              service:
+                name: mail-signature
+                port:
+                  number: 3000
