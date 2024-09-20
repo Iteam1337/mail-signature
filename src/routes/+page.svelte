@@ -1,9 +1,20 @@
 <script>
 	export const prerender = true;
+	import { onMount } from 'svelte';
+
 	let name = '';
 	let title = '';
 	let email = '';
 	let phone = '';
+
+	onMount(() => {
+		// Fetch the email from the headers
+		fetch('/api/user-info')
+			.then(response => response.json())
+			.then(data => {
+				email = data.email || '';
+			});
+	});
 </script>
 
 <div>
