@@ -4,24 +4,54 @@ html
     title Mail Signature
     link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap")
   body(style="font-family: 'Roboto', sans-serif;")
+    script.
+      document.addEventListener('DOMContentLoaded', function() {
+        const nameInput = document.getElementById('name');
+        const titleInput = document.getElementById('title');
+        const emailInput = document.getElementById('email');
+        const phoneInput = document.getElementById('phone');
+
+        const nameDisplay = document.querySelector('p[style*="font-weight: bold"]');
+        const titleDisplay = document.querySelector('p[style*="margin: 0 0 5px 0;"]');
+        const emailDisplay = document.querySelector('a[href^="mailto:"]');
+        const phoneDisplay = document.querySelector('a[href^="tel:"]');
+
+        nameInput.addEventListener('input', () => {
+          nameDisplay.textContent = nameInput.value;
+        });
+
+        titleInput.addEventListener('input', () => {
+          titleDisplay.textContent = titleInput.value;
+        });
+
+        emailInput.addEventListener('input', () => {
+          emailDisplay.textContent = emailInput.value;
+          emailDisplay.href = `mailto:${emailInput.value}`;
+        });
+
+        phoneInput.addEventListener('input', () => {
+          phoneDisplay.textContent = phoneInput.value;
+          phoneDisplay.href = `tel:${phoneInput.value}`;
+        });
+      });
     div
       h1 Mail Signature
       h2 1. Enter your details
 
       label(for="name") Name:
-      input#name(type="text", placeholder="Förnamn Efternamn", value="")
+      input(id="name" type="text" placeholder="Förnamn Efternamn" value="")
       br
 
       label(for="title") Title:
-      input#title(type="text", placeholder="Yrkestitel", value="")
+      input(id="title" type="text" placeholder="Yrkestitel" value="")
       br
 
       label(for="email") Email:
-      input#email(type="text", placeholder="fornamn.efternamn@iteam.se", value=email)
+      input(id="email" type="text" placeholder="fornamn.efternamn@iteam.se" value=email)
       br
 
       label(for="phone") Phone:
-      input#phone(type="text", placeholder="+46 NNN NN NN NN", value="")
+      input(id="phone" type="text" placeholder="+46 NNN NN NN NN" value="")
       br
 
       h2 2. Copy your signature to your mail client
