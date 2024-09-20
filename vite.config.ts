@@ -8,9 +8,6 @@ const config: UserConfig = {
 			'/api': {
 				changeOrigin: true,
 				rewrite: (path) => path.replace(/^\/api/, ''),
-				headers: {
-					'X-Forwarded-Email': 'user@example.com' // Example header, replace with actual logic
-				}
 			}
 		}
 	}
