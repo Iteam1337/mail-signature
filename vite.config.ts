@@ -5,9 +5,12 @@ const config: UserConfig = {
 	plugins: [sveltekit()],
 	server: {
 		proxy: {
-			'/api': {
+			'/test': {
 				changeOrigin: true,
-				rewrite: (path) => path.replace(/^\/api/, ''),
+				rewrite: (path) => path.replace(/^\/test/, ''),
+				headers: {
+					'X-Forwarded-Email': 'user@example.com' // Example header, replace with actual logic
+				}
 			}
 		}
 	}
