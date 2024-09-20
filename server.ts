@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'static')))
 
 // Render the main page
 app.get('/', (req, res) => {
+  console.log('headers', req.headers)
   res.render('index', {
     email: req.headers['x-forwarded-email'] || '',
     name: req.headers['x-forwarded-name'] || '',
